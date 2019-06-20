@@ -1,0 +1,9 @@
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\bin\Release\netcoreapp2.2\AR.Domain.deps.json
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\bin\Release\netcoreapp2.2\AR.Domain.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\bin\Release\netcoreapp2.2\AR.Domain.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\obj\Release\netcoreapp2.2\AR.Domain.csprojAssemblyReference.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\obj\Release\netcoreapp2.2\AR.Domain.csproj.CoreCompileInputs.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\obj\Release\netcoreapp2.2\AR.Domain.AssemblyInfoInputs.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\obj\Release\netcoreapp2.2\AR.Domain.AssemblyInfo.cs
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\obj\Release\netcoreapp2.2\AR.Domain.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Domain\obj\Release\netcoreapp2.2\AR.Domain.pdb

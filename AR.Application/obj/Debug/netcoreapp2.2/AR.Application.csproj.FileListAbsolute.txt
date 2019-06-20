@@ -1,0 +1,28 @@
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Application.deps.json
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Application.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Application.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Domain.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Persistence.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Domain.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Persistence.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.csprojAssemblyReference.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.csproj.CoreCompileInputs.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.AssemblyInfoInputs.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.AssemblyInfo.cs
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.csproj.CopyComplete
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.pdb
+D:\Tom Files\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Application.deps.json
+D:\Tom Files\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Application.dll
+D:\Tom Files\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Application.pdb
+D:\Tom Files\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Domain.dll
+D:\Tom Files\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Persistence.dll
+D:\Tom Files\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Domain.pdb
+D:\Tom Files\ArkinnRuiz\AR.Application\bin\Debug\netcoreapp2.2\AR.Persistence.pdb
+D:\Tom Files\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.csprojAssemblyReference.cache
+D:\Tom Files\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.csproj.CoreCompileInputs.cache
+D:\Tom Files\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.AssemblyInfoInputs.cache
+D:\Tom Files\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.AssemblyInfo.cs
+D:\Tom Files\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.csproj.CopyComplete
+D:\Tom Files\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.dll
+D:\Tom Files\ArkinnRuiz\AR.Application\obj\Debug\netcoreapp2.2\AR.Application.pdb

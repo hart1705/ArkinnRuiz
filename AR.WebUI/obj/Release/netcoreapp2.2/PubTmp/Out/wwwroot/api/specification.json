@@ -1,0 +1,589 @@
+{
+  "x-generator": "NSwag v12.0.14.0 (NJsonSchema v9.13.18.0 (Newtonsoft.Json v11.0.0.0))",
+  "swagger": "2.0",
+  "info": {
+    "title": "My Title",
+    "version": "1.0.0"
+  },
+  "consumes": [
+    "application/json-patch+json",
+    "application/json",
+    "text/json",
+    "application/*+json"
+  ],
+  "paths": {
+    "/api/Events/GetAll": {
+      "get": {
+        "tags": [
+          "Events"
+        ],
+        "operationId": "Events_GetAll",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EventsListViewModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Events/Get/{id}": {
+      "get": {
+        "tags": [
+          "Events"
+        ],
+        "operationId": "Events_Get",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EventDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Events/Create": {
+      "post": {
+        "tags": [
+          "Events"
+        ],
+        "operationId": "Events_Create",
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "command",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateEventCommand"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/api/Events/Update/{id}": {
+      "put": {
+        "tags": [
+          "Events"
+        ],
+        "operationId": "Events_Update",
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          },
+          {
+            "name": "command",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateEventCommand"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EventDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Events/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Events"
+        ],
+        "operationId": "Events_Delete",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "file"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retentions/GetAll": {
+      "get": {
+        "tags": [
+          "Retentions"
+        ],
+        "operationId": "Retentions_GetAll",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/RetentionsListViewModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retentions/Get/{id}": {
+      "get": {
+        "tags": [
+          "Retentions"
+        ],
+        "operationId": "Retentions_Get",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/RetentionDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retentions/Create": {
+      "post": {
+        "tags": [
+          "Retentions"
+        ],
+        "operationId": "Retentions_Create",
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "command",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateRetentionCommand"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retentions/Update/{id}": {
+      "put": {
+        "tags": [
+          "Retentions"
+        ],
+        "operationId": "Retentions_Update",
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          },
+          {
+            "name": "command",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateRetentionCommand"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/RetentionDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retentions/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Retentions"
+        ],
+        "operationId": "Retentions_Delete",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "file"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "EventsListViewModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EventDto"
+          }
+        }
+      }
+    },
+    "EventDto": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateEventCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateEventCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        }
+      }
+    },
+    "RetentionsListViewModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "retentions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RetentionDto"
+          }
+        }
+      }
+    },
+    "RetentionDto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "price",
+        "gp",
+        "gpValue",
+        "simah"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "clientName": {
+          "type": "string"
+        },
+        "customerID": {
+          "type": "string"
+        },
+        "contactNumber": {
+          "type": "string"
+        },
+        "currentProject": {
+          "type": "string"
+        },
+        "currentUnitNumber": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gp": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gpValue": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "simah": {
+          "type": "boolean"
+        },
+        "typeOfCounterOffers": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "vas": {
+          "type": "string"
+        },
+        "refNo": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateRetentionCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "price",
+        "gp",
+        "gpValue",
+        "simah"
+      ],
+      "properties": {
+        "clientName": {
+          "type": "string"
+        },
+        "customerID": {
+          "type": "string"
+        },
+        "contactNumber": {
+          "type": "string"
+        },
+        "currentProject": {
+          "type": "string"
+        },
+        "currentUnitNumber": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gp": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gpValue": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "simah": {
+          "type": "boolean"
+        },
+        "typeOfCounterOffers": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "vas": {
+          "type": "string"
+        },
+        "refNo": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateRetentionCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "price",
+        "gp",
+        "gpValue",
+        "simah"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "clientName": {
+          "type": "string"
+        },
+        "customerID": {
+          "type": "string"
+        },
+        "contactNumber": {
+          "type": "string"
+        },
+        "currentProject": {
+          "type": "string"
+        },
+        "currentUnitNumber": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gp": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gpValue": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "simah": {
+          "type": "boolean"
+        },
+        "typeOfCounterOffers": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "vas": {
+          "type": "string"
+        },
+        "refNo": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

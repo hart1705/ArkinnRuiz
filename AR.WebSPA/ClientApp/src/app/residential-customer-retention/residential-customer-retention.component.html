@@ -1,0 +1,410 @@
+<form #myform="ngForm" class="form form-register">
+<!--<form #myform="ngForm" (ngSubmit)="create(myform)" class="form form-register">-->
+  <div class="form-group row ">
+    <div class="col-md-8">
+      <h2>Residential Customer Retention Request Form</h2>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group row">
+        <label for="date" class="col-sm-4 col-form-label">Date</label>
+        <div class="input-group col-sm-8">
+          <span [owlDateTimeTrigger]="dtdate" class="input-group-addon"><i class="fa fa-calendar"></i></span>
+          <input name="retentionDate" id="retentionDate" [owlDateTimeTrigger]="dtdate" [owlDateTime]="dtdate"
+                 [(ngModel)]="retentionDate"
+                 placeholder="{{placeholder}}"
+                 readonly
+                 class="form-control">
+        </div>
+        <owl-date-time [pickerType]="'calendar'" #dtdate></owl-date-time>
+      </div>
+      <div class="form-group row">
+        <label for="refNo" class="col-sm-4 col-form-label">Ref. No:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="refNo" placeholder="Ref. No:">
+        </div>
+      </div>
+    </div>
+  </div>
+  <ngb-tabset #t="ngbTabset" class="tabset1" [destroyOnHide]="false">
+    <ngb-tab id="tab-requestor">
+      <ng-template ngbTabTitle><b>Requestor Information</b></ng-template>
+      <ng-template ngbTabContent>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group row">
+              <h3 class="col-md-12 text-center">
+                Requestor Informations
+                <button type="button" class="btn btn-primary float-right" (click)="t.select('tab-counter')">Next</button>
+              </h3>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-md-4">Client Name</label>
+                  <input type="text" class="form-control" name="clientName" id="clientName" placeholder="Client Name"
+                         ngModel appAutofocus #clientName ="ngModel"
+                         [ngClass]="{'is-invalid': !clientName?.valid && clientName?.touched,
+                         'is-valid': clientName?.valid && clientName?.touched}" required >
+                  <small *ngIf="clientName?.errors?.required && clientName?.touched" class="form-text invalid-feedback">Required Field</small>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Customer ID</label>
+                  <input type="text" class="form-control" name="customerID" id="customerID" placeholder="Customer ID" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Contract Number</label>
+                  <input type="number" class="form-control" name="contractNumber" id="contractNumber" placeholder="Contract Number" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Current Project</label>
+                  <input type="text" class="form-control" name="currentProject" id="currentProject" placeholder="Current Project" ngModel required>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-md-6">Current Unit Number</label>
+                  <input type="text" class="form-control" name="currentUnitNumber" id="currentUnitNumber" placeholder="Current Unit Number" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Price</label>
+                  <input type="number" class="form-control" name="price" id="price" placeholder="Price" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">GP %</label>
+                  <input type="text"  class="form-control" name="gp" id="gp" placeholder="GP %" (change)="onPercentChange($event)"  ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">GP Value</label>
+                  <input type="number" class="form-control" name="gpValue" id="gpValue" placeholder="GP Value" ngModel required
+                        (change)="setTwoNumberDecimal($event)" (ngModelChange)="item.value=$event">
+                </div>
+
+                <div class="form-group">
+                  <label class="col-md-4">SIMAH</label>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="simahYes" name="radio_type" [(ngModel)]="radioData" [value]="1">
+                    <label class="custom-control-label" for="simahYes">Yes</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="simahNo" name="radio_type" [(ngModel)]="radioData" [value]="0">
+                    <label class="custom-control-label" for="simahNo">No</label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab id="tab-counter">
+      <ng-template ngbTabTitle><b>Counter Offers</b></ng-template>
+      <ng-template ngbTabContent>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group row">
+              <h3 class="col-md-12 text-center">
+                Type of Counter Offers
+                <input type="button" class="btn btn-primary float-right" value="Next" (click)="t.select('tab-merger')">
+                <input type="button" class="btn btn-primary float-left" value="Back" (click)="t.select('tab-requestor')">
+
+              </h3>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-check row">
+                  <label class="col-sm-2">1</label>
+                  <input type="checkbox" class="form-check-input" id="merge" name="cbMerge" [(ngModel)]="cbMerge" (change)="onCheckboxChagen($event, 'Merge')">
+                  <label class="form-check-label" for="merge">Merge (Please fill below table)</label>
+                </div>
+                <div class="form-check row">
+                  <label class="col-sm-2">2</label>
+                  <input type="checkbox" class="form-check-input" id="expedite" name="cbExpedite" [(ngModel)]="cbExpedite" (change)="onCheckboxChagen($event, 'Expedite')">
+                  <label class="form-check-label" for="expedite">Expedite Handover</label>
+                </div>
+                <div class="form-check row">
+                  <label class="col-sm-2">3</label>
+                  <input type="checkbox" class="form-check-input" id="discount" name="cbDiscounts" [(ngModel)]="cbDiscounts" (change)="onCheckboxChagen($event, 'Discounts')">
+                  <label class="form-check-label" for="discount">Discounts & Rebates</label>
+                </div>
+                <div class="form-check row">
+                  <label class="col-sm-2">4</label>
+                  <input type="checkbox" class="form-check-input" id="exceptional" name="cbExceptional" [(ngModel)]="cbExceptional" (change)="onCheckboxChagen($event, 'Exceptional')">
+                  <label class="form-check-label" for="exceptional">Exceptional Approval</label>
+                </div>
+                <div class="form-check row">
+                  <label class="col-sm-2">5</label>
+                  <input type="checkbox" class="form-check-input" id="upgrade" name="cbUpgrade" [(ngModel)]="cbUpgrade" (change)="onCheckboxChagen($event, 'Upgrade')">
+                  <label class="form-check-label" for="upgrade">Upgrade</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-check row">
+                  <label class="col-sm-2">6</label>
+                  <input type="checkbox" class="form-check-input" id="downgrade" name="cbDowngrade" [(ngModel)]="cbDowngrade" (change)="onCheckboxChagen($event, 'Downgrade')">
+                  <label class="form-check-label" for="downgrade">Downgrade</label>
+                </div>
+                <div class="form-check row">
+                  <label class="col-sm-2">7</label>
+                  <input type="checkbox" class="form-check-input" id="swapping" name="cbSwapping" [(ngModel)]="cbSwapping" (change)="onCheckboxChagen($event, 'Swapping')">
+                  <label class="form-check-label" for="swapping">Swapping Property</label>
+                </div>
+                <div class="form-check row">
+                  <label class="col-sm-2">8</label>
+                  <input type="checkbox" class="form-check-input" id="reschedule" name="cbReschedule" [(ngModel)]="cbReschedule" (change)="onCheckboxChagen($event, 'Reschedule')">
+                  <label class="form-check-label" for="reschedule">Reschedule</label>
+                </div>
+                <div class="form-check row">
+                  <label class="col-sm-2">9</label>
+                  <input type="checkbox" class="form-check-input" id="waive" name="cbWaive" [(ngModel)]="cbWaive" (change)="onCheckboxChagen($event, 'Waive')">
+                  <label class="form-check-label" for="waive">Waive Service Charges</label>
+                </div>
+                <div class="form-check row">
+                  <label class="col-sm-2">10</label>
+                  <input type="checkbox" class="form-check-input" id="vas" name="cbVAS" [(ngModel)]="cbVAS" (change)="onCheckboxChagen($event, 'VAS')">
+                  <label class="form-check-label" for="vas">Waive VAS</label>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="form-group">
+              <label class="col-md-4">Description/Remarks</label>
+              <textarea class="form-control" name="description" id="description" placeholder="Description/Remarks" ngModel>
+              </textarea>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab id="tab-merger">
+      <ng-template ngbTabTitle><b>Merger/Upgrade/Downgrade</b></ng-template>
+      <ng-template ngbTabContent>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group row">
+              <h3 class="col-md-12 text-center">
+                Merger/ Upgrade/ Downgrade Options
+                <input type="button" class="btn btn-primary float-right" value="Next" (click)="t.select('tab-waiver')">
+                <input type="button" class="btn btn-primary float-left" value="Back" (click)="t.select('tab-counter')">
+              </h3>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <h4>Current Unit</h4>
+                <button type="button" class="btn btn-info float-right" (click)="addRecordRetentionUnit()">Add New</button>
+                <ng2-smart-table #smartTableRetentionUnit [settings]="settingsRetentionUnit" [source]="vmRetentionUnitList.retentionUnits" (deleteConfirm)="onDeleteConfirmRetentionUnit($event)"
+                                  (editConfirm)="onSaveConfirmRetentionUnit($event)" (createConfirm)="onCreateConfirmRetentionUnit($event)" class="row-border hover">
+
+                </ng2-smart-table>
+              </div>
+              <div class="col-md-6">
+                <h4>Merge / Upgrade / Downgrade Unit</h4>
+                <div class="form-group">
+                  <label class="col-md-4">Project</label>
+                  <input type="text" class="form-control" name="unitProject" id="unitProject" placeholder="Project" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Unit No.</label>
+                  <input type="text" class="form-control" name="unitNo" id="unitNo" placeholder="Unit No." ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Price</label>
+                  <input type="text" class="form-control" name="unitPrice" id="unitPrice" placeholder="Price" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">GP</label>
+                  <input type="text" class="form-control" name="unitGP" id="unitGP" placeholder="GP%" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">GP Value</label>
+                  <input type="text" class="form-control" name="unitGPValue" id="unitGPValue" placeholder="GP Value" ngModel required>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab id="tab-waiver">
+      <ng-template ngbTabTitle><b>Waiver Details</b></ng-template>
+      <ng-template ngbTabContent>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group row">
+              <h3 class="col-md-12 text-center">
+                Waiver Details
+                <input type="button" class="btn btn-primary float-right" value="Next" (click)="t.select('tab-collection')">
+                <input type="button" class="btn btn-primary float-left" value="Back" (click)="t.select('tab-merger')">
+              </h3>
+            </div>
+            <div class="text-center">(only for item 3, 9, 10)</div>
+            <div class="form-group col-md-6">
+              <label class="col-md-12">Waived Installments Amount</label>
+              <input type="text" class="form-control" name="waivedInstallmentsAmount" id="waivedInstallmentsAmount" [disabled]="isDisabled()" ngModel  appAutofocus>
+            </div>
+            <div class="form-group col-md-6">
+              <label class="col-md-12">Waived Service Charge Amount</label>
+              <input type="text" class="form-control" name="waivedServiceChargeAmount" id="waivedServiceChargeAmount" [disabled]="isDisabled()" ngModel>
+            </div>
+            <div class="form-group col-md-6">
+              <label class="col-md-12">Waived Bearing the Cost</label>
+              <input type="text" class="form-control" name="waivedBearingCost" id="waivedBearingCost" [disabled]="isDisabled()" ngModel>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab id="tab-collection">
+      <ng-template ngbTabTitle><b>Collection Status</b></ng-template>
+      <ng-template ngbTabContent>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group row">
+              <h3 class="col-md-12 text-center">
+                Collection Status of Current Unit
+                <input type="button" class="btn btn-primary float-right" value="Next" (click)="t.select('tab-payment')">
+                <input type="button" class="btn btn-primary float-left" value="Back" (click)="t.select('tab-waiver')">
+              </h3>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-info float-right" (click)="addRecordCollection()">Add New</button>
+                <ng2-smart-table #smartTableCollection [settings]="settingsCollection" [source]="vmRetentionCollectionList.retentionCollectionUnitPlans" (deleteConfirm)="onDeleteConfirmCollection($event)"
+                                  (editConfirm)="onSaveConfirmCollection($event)" (createConfirm)="onCreateConfirmCollection($event)" class="row-border hover">
+
+                </ng2-smart-table>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab id="tab-payment">
+      <ng-template ngbTabTitle><b>New Payment Plan</b></ng-template>
+      <ng-template ngbTabContent>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group row">
+              <h3 class="col-md-12 text-center">
+                New Payment Plan
+                <input type="button" class="btn btn-primary float-right" value="Next" (click)="t.select('tab-approvals')">
+                <input type="button" class="btn btn-primary float-left" value="Back" (click)="t.select('tab-collection')">
+
+              </h3>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-md-4">Sold Date</label>
+                  
+                  <div class="input-group">
+                    <span [owlDateTimeTrigger]="dtsolddate" class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    <input  name="newSoldDate" id="newSoldDate" [owlDateTimeTrigger]="dtsolddate" [owlDateTime]="dtsolddate"
+                           [(ngModel)]="inputsolddate"
+                           placeholder="{{placeholder}}"
+                           readonly
+                           class="form-control">
+                  </div>
+                  <owl-date-time [pickerType]="'calendar'" #dtsolddate></owl-date-time>
+
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Payment Plan</label>
+                  <input type="text" class="form-control" name="newPaymentPlan" id="newPaymentPlan" placeholder="Payment Plan" ngModel appAutofocus required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">First Installment</label>
+                  <div class="input-group">
+                    <span [owlDateTimeTrigger]="dtfirst" class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    <input name="newFirstInstallment" id="newFirstInstallment" [owlDateTimeTrigger]="dtfirst" [owlDateTime]="dtfirst"
+                           [(ngModel)]="inputfirst"
+                           placeholder="{{placeholder}}"
+                           readonly
+                           class="form-control">
+                  </div>
+                  <owl-date-time [pickerType]="'calendar'" #dtfirst></owl-date-time>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Last Installment</label>
+                  <div class="input-group">
+                    <span [owlDateTimeTrigger]="dtlast" class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    <input name="newLastInstallment" id="newLastInstallment" [owlDateTimeTrigger]="dtlast" [owlDateTime]="dtlast"
+                           [(ngModel)]="inputlast"
+                           placeholder="{{placeholder}}"
+                           [min]='min' [max]='max'
+                           readonly
+                           class="form-control">
+                  </div>
+                  <owl-date-time [pickerType]="'calendar'" #dtlast ></owl-date-time>
+
+                </div>
+                <div class="form-group">
+                  <label class="col-md-6">No. of Settled Installments</label>
+                  <input type="text" class="form-control" name="newNoInstallment" id="newNoInstallment" placeholder="No. of Settled Installments" ngModel required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="col-md-4">Collected Amount</label>
+                  <input type="text" class="form-control" name="newCollectedAmount" id="newCollectedAmount" placeholder="Collected Amount" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-6">Total Collected Amount</label>
+                  <input type="text" class="form-control" name="newTotalCollectedAmount" id="newTotalCollectedAmount" placeholder="Collected Amount" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Collected in %</label>
+                  <input type="text" class="form-control" name="newCollectedPercent" id="newCollectedPercent" placeholder="Collected in %" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Due Amount</label>
+                  <input type="text" class="form-control" name="newDueAmount" id="newDueAmount" placeholder="Due Amount" ngModel required>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4">Remaining Amount</label>
+                  <input type="text" class="form-control" name="newRemainingAmount" id="newRemainingAmount" placeholder="Remaining Amount" ngModel required>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab id="tab-approvals">
+      <ng-template ngbTabTitle><b>Approvals</b></ng-template>
+      <ng-template ngbTabContent>
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group row">
+              <h3 class="col-md-12 text-center">
+                Approvals
+                <!--<input type="submit" class="btn btn-primary float-right" value="Register">-->
+                <button type="button" class="btn btn-success float-right" (click)="create(myform)">Submit</button>
+                <button type="button" class="btn btn-primary float-left" (click)="t.select('tab-payment')">Back</button>
+              </h3>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6">
+                <h4>Customer Retention Committee Approval</h4>
+                <button type="button" class="btn btn-info float-right" (click)="addRecordApproval()">Add New</button>
+                <!--<ng2-smart-table #smartTableApproval [settings]="settingsApproval" [source]="vmRetentionApprovalList.retentionApprovals" (deleteConfirm)="onDeleteConfirmApproval($event)"
+                                 (editConfirm)="onSaveConfirmApproval($event)" (createConfirm)="onCreateConfirmApproval($event)" class="row-border hover">
+
+                </ng2-smart-table>-->
+              </div>
+              <div class="col-md-6">
+                <h4>Additional Approvals(AS PER POLICY)</h4>
+                <button type="button" class="btn btn-info float-right" (click)="addRecordApprovalAdd()">Add New</button>
+                <!--<ng2-smart-table #smartTableApprovalAdd [settings]="settingsApprovalAdd" [source]="vmRetentionApprovalAddList.retentionApprovals" (deleteConfirm)="onDeleteConfirmApprovalAdd($event)"
+                                 (editConfirm)="onSaveConfirmApprovalAdd($event)" (createConfirm)="onCreateConfirmApprovalAdd($event)" class="row-border hover">
+
+                </ng2-smart-table>-->
+              </div>
+            </div>
+          </div> 
+        </div>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</form>

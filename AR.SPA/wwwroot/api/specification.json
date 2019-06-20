@@ -1,0 +1,383 @@
+{
+  "x-generator": "NSwag v12.0.20.0 (NJsonSchema v9.13.28.0 (Newtonsoft.Json v11.0.0.0))",
+  "swagger": "2.0",
+  "info": {
+    "title": "My Title",
+    "version": "1.0.0"
+  },
+  "host": "localhost:44313",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json-patch+json",
+    "application/json",
+    "text/json",
+    "application/*+json"
+  ],
+  "produces": [
+    "text/plain",
+    "application/json",
+    "text/json"
+  ],
+  "paths": {
+    "/api/Retention/GetAll": {
+      "get": {
+        "tags": [
+          "Retention"
+        ],
+        "operationId": "Retention_GetAll",
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/RetentionsListViewModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retention/Get/{id}": {
+      "get": {
+        "tags": [
+          "Retention"
+        ],
+        "operationId": "Retention_Get",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/RetentionDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retention/Create": {
+      "post": {
+        "tags": [
+          "Retention"
+        ],
+        "operationId": "Retention_Create",
+        "parameters": [
+          {
+            "name": "command",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateRetentionCommand"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retention/Update/{id}": {
+      "put": {
+        "tags": [
+          "Retention"
+        ],
+        "operationId": "Retention_Update",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          },
+          {
+            "name": "command",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateRetentionCommand"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/RetentionDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Retention/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Retention"
+        ],
+        "operationId": "Retention_Delete",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "file"
+            }
+          }
+        }
+      }
+    },
+    "/api/SampleData/WeatherForecasts": {
+      "get": {
+        "tags": [
+          "SampleData"
+        ],
+        "operationId": "SampleData_WeatherForecasts",
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/WeatherForecast"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "RetentionsListViewModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "retentions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RetentionDto"
+          }
+        }
+      }
+    },
+    "RetentionDto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "price",
+        "gp",
+        "gpValue",
+        "simah"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "clientName": {
+          "type": "string"
+        },
+        "customerID": {
+          "type": "string"
+        },
+        "contactNumber": {
+          "type": "string"
+        },
+        "currentProject": {
+          "type": "string"
+        },
+        "currentUnitNumber": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gp": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gpValue": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "simah": {
+          "type": "boolean"
+        },
+        "typeOfCounterOffers": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "vas": {
+          "type": "string"
+        },
+        "refNo": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateRetentionCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "price",
+        "gp",
+        "gpValue",
+        "simah"
+      ],
+      "properties": {
+        "clientName": {
+          "type": "string"
+        },
+        "customerID": {
+          "type": "string"
+        },
+        "contactNumber": {
+          "type": "string"
+        },
+        "currentProject": {
+          "type": "string"
+        },
+        "currentUnitNumber": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gp": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gpValue": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "simah": {
+          "type": "boolean"
+        },
+        "typeOfCounterOffers": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "vas": {
+          "type": "string"
+        },
+        "refNo": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateRetentionCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "price",
+        "gp",
+        "gpValue",
+        "simah"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "clientName": {
+          "type": "string"
+        },
+        "customerID": {
+          "type": "string"
+        },
+        "contactNumber": {
+          "type": "string"
+        },
+        "currentProject": {
+          "type": "string"
+        },
+        "currentUnitNumber": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gp": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "gpValue": {
+          "type": "number",
+          "format": "decimal"
+        },
+        "simah": {
+          "type": "boolean"
+        },
+        "typeOfCounterOffers": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "vas": {
+          "type": "string"
+        },
+        "refNo": {
+          "type": "string"
+        }
+      }
+    },
+    "WeatherForecast": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "temperatureC",
+        "temperatureF"
+      ],
+      "properties": {
+        "dateFormatted": {
+          "type": "string"
+        },
+        "temperatureC": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "temperatureF": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  }
+}

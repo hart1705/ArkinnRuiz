@@ -1,0 +1,16 @@
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Infrastructure.deps.json
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Infrastructure.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Infrastructure.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Application.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Domain.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Persistence.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Application.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Domain.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\bin\Release\netcoreapp2.2\AR.Persistence.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\obj\Release\netcoreapp2.2\AR.Infrastructure.csprojAssemblyReference.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\obj\Release\netcoreapp2.2\AR.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\obj\Release\netcoreapp2.2\AR.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\obj\Release\netcoreapp2.2\AR.Infrastructure.AssemblyInfo.cs
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\obj\Release\netcoreapp2.2\AR.Infrastructure.csproj.CopyComplete
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\obj\Release\netcoreapp2.2\AR.Infrastructure.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.Infrastructure\obj\Release\netcoreapp2.2\AR.Infrastructure.pdb

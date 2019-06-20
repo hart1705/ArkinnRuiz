@@ -1,0 +1,46 @@
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.deps.json
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.runtimeconfig.json
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.runtimeconfig.dev.json
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Application.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Domain.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Infrastructure.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Persistence.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Application.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Infrastructure.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Domain.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Persistence.pdb
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.csprojAssemblyReference.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.csproj.CoreCompileInputs.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.RazorAssemblyInfo.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.RazorAssemblyInfo.cs
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.AssemblyInfoInputs.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.AssemblyInfo.cs
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.RazorTargetAssemblyInfo.cache
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.csproj.CopyComplete
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.dll
+C:\Users\aramos\source\repos\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.pdb
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.deps.json
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.runtimeconfig.json
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.runtimeconfig.dev.json
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.dll
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.WebUI.pdb
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Application.dll
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Domain.dll
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Infrastructure.dll
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Persistence.dll
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Application.pdb
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Infrastructure.pdb
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Domain.pdb
+D:\Tom Files\ArkinnRuiz\AR.WebUI\bin\Debug\netcoreapp2.2\AR.Persistence.pdb
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.csprojAssemblyReference.cache
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.csproj.CoreCompileInputs.cache
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.RazorAssemblyInfo.cache
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.RazorAssemblyInfo.cs
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.AssemblyInfoInputs.cache
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.AssemblyInfo.cs
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.RazorTargetAssemblyInfo.cache
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.csproj.CopyComplete
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.dll
+D:\Tom Files\ArkinnRuiz\AR.WebUI\obj\Debug\netcoreapp2.2\AR.WebUI.pdb

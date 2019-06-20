@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\WebCore\Retention</_PublishTargetUrl>
+    <EncryptedPassword />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>02/25/2019 17:00:52</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>03/20/2019 14:44:33</publishTime>
+    </File>
+    <File Include="AR.Application.dll">
+      <publishTime>03/29/2019 12:15:37</publishTime>
+    </File>
+    <File Include="AR.Application.pdb">
+      <publishTime>03/29/2019 12:15:37</publishTime>
+    </File>
+    <File Include="AR.Domain.dll">
+      <publishTime>03/28/2019 16:26:37</publishTime>
+    </File>
+    <File Include="AR.Domain.pdb">
+      <publishTime>03/28/2019 16:26:37</publishTime>
+    </File>
+    <File Include="AR.Infrastructure.dll">
+      <publishTime>03/29/2019 12:15:38</publishTime>
+    </File>
+    <File Include="AR.Infrastructure.pdb">
+      <publishTime>03/29/2019 12:15:38</publishTime>
+    </File>
+    <File Include="AR.Persistence.dll">
+      <publishTime>03/29/2019 12:15:36</publishTime>
+    </File>
+    <File Include="AR.Persistence.pdb">
+      <publishTime>03/29/2019 12:15:36</publishTime>
+    </File>
+    <File Include="AR.WebUI.deps.json">
+      <publishTime>03/29/2019 12:17:31</publishTime>
+    </File>
+    <File Include="AR.WebUI.dll">
+      <publishTime>03/29/2019 12:15:39</publishTime>
+    </File>
+    <File Include="AR.WebUI.pdb">
+      <publishTime>03/29/2019 12:15:39</publishTime>
+    </File>
+    <File Include="AR.WebUI.runtimeconfig.json">
+      <publishTime>03/29/2019 12:17:32</publishTime>
+    </File>
+    <File Include="Autofac.dll">
+      <publishTime>07/25/2017 05:11:08</publishTime>
+    </File>
+    <File Include="Autofac.Extensions.DependencyInjection.dll">
+      <publishTime>11/06/2018 22:57:54</publishTime>
+    </File>
+    <File Include="AutoMapper.dll">
+      <publishTime>11/17/2018 10:14:56</publishTime>
+    </File>
+    <File Include="AutoMapper.Extensions.Microsoft.DependencyInjection.dll">
+      <publishTime>11/18/2018 08:27:48</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/3rdpartylicenses.txt">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/es2015-polyfills.e9151ad7a19251a095c3.js">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/favicon.ico">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/index.html">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/main.50a8d57137d746386598.js">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/polyfills.b0b5d444c279bdd29bf6.js">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/runtime.b2cdafc9eb8bc46e47e2.js">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/scripts.6e01aa3d3d7f1d702677.js">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="ClientApp/dist/ClientApp/styles.e4c744201d20db858da1.css">
+      <publishTime>03/29/2019 12:17:30</publishTime>
+    </File>
+    <File Include="Dapper.dll">
+      <publishTime>02/11/2019 08:48:26</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>11/12/2018 17:42:52</publishTime>
+    </File>
+    <File Include="FluentValidation.AspNetCore.dll">
+      <publishTime>01/25/2019 11:57:36</publishTime>
+    </File>
+    <File Include="FluentValidation.dll">
+      <publishTime>01/25/2019 11:57:34</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>03/29/2019 11:34:57</publishTime>
+    </File>
+    <File Include="MediatR.dll">
+      <publishTime>12/10/2018 19:51:58</publishTime>
+    </File>
+    <File Include="MediatR.Extensions.Microsoft.DependencyInjection.dll">
+      <publishTime>12/13/2018 18:52:38</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>02/25/2019 20:46:06</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>02/25/2019 20:46:41</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>01/24/2019 23:30:00</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Design.dll">
+      <publishTime>01/24/2019 23:30:36</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>01/24/2019 23:30:06</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>01/24/2019 23:30:12</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>01/24/2019 23:30:40</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>11/12/2018 17:42:08</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>11/12/2018 17:42:32</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>11/12/2018 17:42:44</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>11/12/2018 17:42:40</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>11/12/2018 17:42:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>11/12/2018 17:42:12</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>11/12/2018 17:42:48</publishTime>
+    </File>
+    <File Include="NJsonSchema.dll">
+      <publishTime>02/13/2019 09:13:38</publishTime>
+    </File>
+    <File Include="NSwag.Annotations.dll">
+      <publishTime>02/14/2019 21:14:28</publishTime>
+    </File>
+    <File Include="NSwag.AspNetCore.dll">
+      <publishTime>02/14/2019 21:15:00</publishTime>
+    </File>
+    <File Include="NSwag.Core.dll">
+      <publishTime>02/14/2019 21:14:16</publishTime>
+    </File>
+    <File Include="NSwag.SwaggerGeneration.AspNetCore.dll">
+      <publishTime>02/14/2019 21:14:46</publishTime>
+    </File>
+    <File Include="NSwag.SwaggerGeneration.dll">
+      <publishTime>02/14/2019 21:14:46</publishTime>
+    </File>
+    <File Include="NSwag.SwaggerGeneration.WebApi.dll">
+      <publishTime>02/14/2019 21:14:46</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>04/24/2018 21:27:10</publishTime>
+    </File>
+    <File Include="package-lock.json">
+      <publishTime>02/25/2019 20:12:13</publishTime>
+    </File>
+    <File Include="Remotion.Linq.dll">
+      <publishTime>02/06/2018 22:25:00</publishTime>
+    </File>
+    <File Include="Seq.Extensions.Logging.dll">
+      <publishTime>08/24/2017 15:45:34</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>02/25/2019 20:44:58</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>02/25/2019 20:44:58</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>02/25/2019 20:44:58</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>02/25/2019 20:44:58</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>02/25/2019 20:44:59</publishTime>
+    </File>
+    <File Include="System.Interactive.Async.dll">
+      <publishTime>07/11/2018 13:48:42</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>03/29/2019 12:17:32</publishTime>
+    </File>
+    <File Include="wwwroot/api/specification.json">
+      <publishTime>03/29/2019 11:41:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
